@@ -6,7 +6,7 @@ Scarica le slide da qui: Coming soon!
 
 DOI: Coming soon!
 
-In questa repository <b>dh-ch-seminar</b>, trovi il materiale per l'esercitazione di sviluppo web. I file sono costitutivi di un sito d'esempio intitolato <em>Attestazioni dantesche trasmesse su supporti eterogenei e conservate presso istituti culturali italiani</em>. Quanto riportato di seguito verrà replicato durante le lezioni al fine di imparare a gestire il workflow di sviluppo e pubblicazione di un sito web:
+In questo repository, trovi il materiale per l'esercitazione di sviluppo web. I file sono costitutivi di un sito d'esempio intitolato <em>Attestazioni dantesche trasmesse su supporti eterogenei e conservate presso istituti culturali italiani</em>. Quanto riportato di seguito verrà replicato durante le lezioni al fine di imparare a gestire il workflow di sviluppo e pubblicazione di un sito web:
 
 <ol>
   <li><b>Sviluppo della struttura del sito</b> in HTML/HTML5 > index.html/lista.html/item.html/persona.html</li>
