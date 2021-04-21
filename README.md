@@ -43,7 +43,7 @@ Inoltre, come precedentemente spiegato, vengono integrati:
 
 Il link al sito d'esempio è il seguente:
 <br>
-<b>https://martinadellobuono.github.io/sito-da-riprodurre-dhch/</b>
+<b>https://sviluppo-web-dhch.github.io/sito-da-riprodurre/</b>
 
 <b>Attenzione!!! Le immagini riportate nel sito sono comperte da licenze Creative Commons che ne permettono il riutilizzo. Esse fungono da placeholder, dunque sono inserite a scopo illustrativo ed esemplificativo.</b>
 
