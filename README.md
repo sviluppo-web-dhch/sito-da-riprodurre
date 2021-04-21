@@ -33,10 +33,10 @@ Inoltre, come precedentemente spiegato, vengono integrati:
     <a href="https://pages.github.com/" target="_blank" alt="GitHub Pages">GitHub Pages</a> del quale vengono affrontati i seguenti argomenti:
     <ul>
       <li>Funzionalità principali di GitHub</li>
-      <li>Iscrizione</li>
+      <li>Registrazione</li>
       <li>Repositories</li>
-      <li>Organizzazioni</li>
-      <li>Pubblicazione attraverso GitHub Pages</li>
+      <li>Organizations</li>
+      <li>Pubblicazione di un sito web attraverso GitHub Pages</li>
     </ul>
   </li>
 </ol>
