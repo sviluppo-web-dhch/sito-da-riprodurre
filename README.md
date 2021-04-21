@@ -60,5 +60,4 @@ Alma Mater Studiorum - Università di Bologna
 martina.dellobuono2@unibo.it
 
 ### Tutti i materiali integrativi
-https://github.com/martinadellobuono/materiale-sviluppo-web-dhch
-
+https://github.com/sviluppo-web-dhch
