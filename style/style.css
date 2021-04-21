@@ -1,0 +1,138 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+/* html */
+/* se impostate -webkit-font-smoothing: antialiased; i font appariranno più */
+html {scroll-behavior: smooth; -webkit-font-smoothing: antialiased;}
+
+/* h1, h2, h3, h4, h5 */
+h1 {font-family: 'Eagle Lake', cursive;}
+
+/* button */
+.btn:hover {box-shadow: 0px 5px 40px -10px rgba(122, 144, 173, .2); -webkit-box-shadow: 0px 5px 40px -10px rgba(38, 44, 52, .2); -moz-box-shadow: 0px 5px 40px -10px rgba(38, 44, 52, .2);}
+/* in btn-blue è necessaria la rule !important in color perché altrimenti in hover il colore del font torna grigio come di default */
+.btn-blue {background-color: #61879E; border: 1px solid #61879E; color: #FFFFFF !important;}
+.btn-blue:hover {background-color: #3A515F; border: 1px solid #3A515F;}
+/* in btn-light è necessaria la rule !important perché si deve sovrascrivere il CSS originale bootstrap */
+.btn-light:hover {background-color: #D3D9DF !important; border: 1px solid #D3D9DF !important;}
+
+/* background */
+.background-blue {background-color: #3A515F;}
+/* i due puntini presenti nel valore di background-image significano 'esci dalla cartella in cui ti trovi e vai nella cartella img' */
+.background-dante {background-attachment: fixed; background-image: url(../img/img-home/dante-blake.jpg); background-size: cover; background-repeat: no-repeat;}
+.background-gray {background-color: #FEFEFE;}
+.background-opacity {background-color: #FFFFFF; border: 1px solid rgba(0,0,0,.125); border-radius: .25rem; padding: 50px 60px 50px 60px;}
+
+/* link */
+.link {color: #8C3027; text-decoration: none;}
+.link:hover {color: #8C3027; text-decoration: underline;}
+
+/* logo */
+.logo-width {width: 300px;}
+.navbar-brand {font-family: 'Eagle Lake', cursive;}
+
+/* carousel */
+.carousel-caption {background-color: rgba(26, 26, 26, .7); left: 0; right: 0; width: 100%;}
+.carousel-caption > h1 {font-family: 'Eagle Lake', cursive; font-size: 2em;}
+.carousel-caption > h2 {font-size: 1.5em;}
+.carousel-control-prev, .carousel-control-next {z-index: 10 !important;}
+
+/* carousel homepage */
+.carousel-home img {height: 100vh;}
+
+/* carousel item */
+.carousel-specific-item {background-color: rgba(26, 26, 26, .3);}
+.carousel-specific-item img {background-color: #3A515F; height: 500px; width: auto !important;}
+
+/* carousel media query */
+@media screen and (max-width: 769px) {
+    .carousel-home .carousel-item > img {height: auto;}
+}
+
+/* card */
+.card-body .form-check {display: inline; margin-left: 10px;}
+.card-header b > a, .card-text > b > a, li > b > a {color: #61879E;}
+.card-text > span {display: inline-block; width: 200px;}
+aside .card:hover, .card-tool:hover, .card-item:hover, .card-related-item:hover {box-shadow: 0px 5px 40px -10px rgba(122, 144, 173, .9); -webkit-box-shadow: 0px 5px 40px -10px rgba(38, 44, 52, .9); -moz-box-shadow: 0px 5px 40px -10px rgba(38, 44, 52, .9);}
+
+/* card tool */
+.card-tool {height: 350px;}
+.card-tool > .card-body > .card-text {height: 215px;}
+.card-tool > .card-body > .btn {display: block; margin: 0 auto;}
+.card-tool > .card-body > h3 {font-size: 1.5em;}
+
+/* card tool media query */
+@media screen and (max-width: 1025px) {
+    .card-tool {height: 550px;}
+    .card-tool > .card-body > .card-text {height: 350px;}
+}
+@media screen and (max-width: 769px) {
+    .card-tool {height: 350px;}
+    .card-tool > .card-body > .card-text {height: 200px;}
+}
+/* tool card ottimizzazione per ipad */
+@media screen and (width: 768px) and (height: 1024px) {
+    .card-tool {height: 500px;}
+    .card-tool > .card-body > .card-text {height: 350px;}
+}
+
+/* card lista */
+.card-item .btn {width: 100%;}
+.card-item > .card-body > .card-metadata {height: 250px;}
+.card-metadata > h4 {font-size: 1.2em;}
+
+@media screen and (max-width: 1025px) {
+    .card-item > .card-body > .card-metadata {height: 400px;}
+}
+
+.card-item img {height: 400px;}
+
+@media screen and (min-width: 575px) and (max-width: 813px) {
+    .card-item img {height: 200px;}
+}
+
+@media screen and (min-width: 2000px) {
+    .card-item img {height: 700px;}
+}
+
+/* card item specifico */
+.btn.btn-light.float-right {margin-top: -7px; width: 150px;}
+.share .btn {width: 100%;}
+.input-number {width: 50px;}
+
+/* card item collegati */
+.card-related-item .card-metadata {height: 100px;}
+.card-related-item img {height: 250px;}
+
+/* tipo di file su immagini */
+.card-item i, .carousel-item i {color: #61879E;}
+.card-item span, .carousel-item > span {background-color: #FEFEFE; border-radius: .25rem; font-size: 1.5em; position: absolute; z-index: 1000;}
+.card-item span:hover, .carousel-inner > .carousel-item > span:hover {background-color: #E6E6E6;}
+.img-code {font-size: .7em;}
+
+/* didascalie immagini */
+.img-caption {font-size: .9em;}
+
+/* breadcrumbs */
+.breadcrumbs > ul > li {color: rgba(0, 0, 0, .5); display: inline; font-size: .9em;}
+/* ::after indica che dopo ogni elemento con le classi/attributi indicati bisogna inserire il contenuto riportato dalla proprietà content */
+.breadcrumbs li:not(:last-child)::after {content: " >";}
+
+/* tab */
+.nav-tabs a:not(.active) {color: #61879E;}
+
+/* pagination */
+/* se notate questa regola che assegna uno specifico colore a un elemento si ripete più volte per scopi didattici, per questo si potrebbe scrivere soltanto una volta assegnando più classi/attributi separati da una virgola */
+.page-link {color: #61879E;}
+.page-item.active .page-link {color: #FEFEFE; border-color: #61879E; background-color: #61879E;}
+.page-item.disabled > .page-link {color: rgba(0, 0, 0, .5);}
+
+/* dropdown */
+.dropdown .btn {width: 100%;}
+
+/* checkbox */
+.checkbox-container > h3 {font-size: 1em;}
+input[type="checkbox"] + label {display: inline;}
+
+/* footer */
+footer ul > li {list-style: none; margin: 0; padding: 0;}

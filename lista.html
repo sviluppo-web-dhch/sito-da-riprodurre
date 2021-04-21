@@ -1,0 +1,495 @@
+<!doctype html> <!-- necessario anche per motivi legali -->
+<html lang="it">
+<!-- head -->
+
+<head>
+    <!-- charset -->
+    <meta charset="utf-8">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- metadati DC -->
+    <meta name="DC.Title" content="Inserisci il titolo del tuo sito web">
+    <meta name="DC.Creator" content="Inserisci il tuo nome e il tuo cognome">
+    <meta name="DC.Subject" content="Inserisci il tema principale del tuo sito web">
+    <meta name="DC.Description" content="Inserisci una breve descrizione del tuo sito web">
+    <meta name="DC.Publisher"
+        content="Inserisci un riferimento all'ente che si occupa della pubblicazione del tuo sito web">
+    <meta name="DC.Contributor"
+        content="Inserisci i nomi e i cognomi di coloro che hanno contribuito alla realizzazione del tuo sito web">
+    <meta name="DC.Date" content="Inserisci la data di creazione/pubblicazione/aggiornamento del tuo sito web">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <link rel="DC.Identifier" href="https://www.nomedelsitoweb.github.io">
+    <meta name="DC.Source" content="Inserisci le risorse utilizzate per la realizzazione del tuo sito web">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Relation"
+        content="Inserisci dei riferimenti alle risorse collegate al sito web, possibilmente utilizzando identificazioni formali (per esempio, i codici ISBN per i libri)">
+    <link rel="DC.Coverage"
+        href="Inserisci una localizzazione per il tuo sito web, possibilmente utilizzando un vocabolario controllato (per esempio, http://www.getty.edu/research/tools/vocabularies/tgn/)">
+    <meta name="DC.Rights"
+        content="Inserisci il tipo di licenza con cui intendi proteggere il tuo sito web (per esempio, fai riferimento a una delle licenze Creative Commons: https://creativecommons.org/share-your-work/)">
+    <!-- il titolo del sito riportato all'interno del tag title compare nella finestra del browser -->
+    <title>Attestazioni dantesche</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+
+<!-- body -->
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- bootstrap navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html" title="Torna a Home">Attestazioni dantesche</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Home">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Introduzione">Introduzione</a>
+                    </li>
+                    <!-- sposta la classe active in base alla pagina visualizzata -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            title="Catalogo">Catalogo</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" title="Lista">Lista</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" title="Luoghi">Luoghi</a>
+                            <a class="dropdown-item" href="#" title="Date">Date</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Persone">Persone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Temi">Temi</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-blue my-2 my-sm-0" type="submit">Cerca</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="background-gray pb-5 pt-5">
+        <!-- items -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 background-blue pb-4 pt-4">
+                    <h2 class="text-light text-center"><span class="text-white-50">Catalogo</span> Lista</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- classi col-sm e col-xs rispettivamente per small devices (tablet) e extrasmall devices (mobile) -->
+                <div class="col-md-2 col-sm-2 col-xs-12 mt-4">
+                    <aside>
+                        <!-- breadcrumbs -->
+                        <nav class="breadcrumbs">
+                            <ul class="pl-0">
+                                <li><a href="index.html" class="link" title="Torna a Home">Home</a></li>
+                                <li>Lista</li>
+                            </ul>
+                        </nav>
+                        <!-- filtri -->
+                        <!-- ordina la lista -->
+                        <div class="checkbox-container">
+                            <h3 class="mb-0">Riordina la lista:</h3>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active mt-1">
+                                    <input type="radio" checked> A-Z
+                                </label>
+                                <label class="btn btn-outline-secondary mt-1">
+                                    <input type="radio"> Z-A
+                                </label>
+                                <label class="btn btn-outline-secondary mt-1">
+                                    <input type="radio"> Ordine cronologico
+                                </label>
+                            </div>
+                        </div>
+                        <!-- filtra la lista -->
+                        <div class="checkbox-container mt-4">
+                            <h3 class="mb-0">Filtra la lista:</h3>
+                            <!-- dropdown menu -->
+                            <div class="dropdown dropright mt-1">
+                                <button class="btn btn-primary btn-primary dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Opere
+                                </button>
+                                <div class="dropdown-menu p-3">
+                                    <!-- checkbox -->
+                                    <input type="checkbox">
+                                    <label>Convivio</label><br>
+                                    <input type="checkbox">
+                                    <label>Commedia</label><br>
+                                    <input type="checkbox">
+                                    <label>De Monarchia</label><br>
+                                    <input type="checkbox">
+                                    <label>Detto d'Amore</label><br>
+                                    <input type="checkbox">
+                                    <label>De vulgari eloquentia</label><br>
+                                    <input type="checkbox">
+                                    <label>Egloghe</label><br>
+                                    <input type="checkbox">
+                                    <label>Epistole</label><br>
+                                    <input type="checkbox">
+                                    <label>Il fiore</label><br>
+                                    <input type="checkbox">
+                                    <label></label>Quaestio de aqua et terra<br>
+                                    <input type="checkbox">
+                                    <label>Rime</label><br>
+                                    <input type="checkbox">
+                                    <label>Vita Nova</label><br>
+                                    <button type="button" class="btn btn-primary mt-2">Filtra</button>
+                                </div>
+                            </div>
+                            <div class="dropdown dropright mt-1">
+                                <button class="btn btn-primary btn-blue dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Date
+                                </button>
+                                <div class="dropdown-menu p-3">
+                                    <!-- checkbox -->
+                                    <input type="checkbox">
+                                    <label>1825</label><br>
+                                    <input type="checkbox">
+                                    <label>1827</label><br>
+                                    <input type="checkbox">
+                                    <label>1851</label><br>
+                                    <input type="checkbox">
+                                    <label>1860</label><br>
+                                    <input type="checkbox">
+                                    <label>1900</label><br>
+                                    <input type="checkbox">
+                                    <label>1963</label><br>
+                                    <button type="button" class="btn btn-blue mt-2">Filtra</button>
+                                </div>
+                            </div>
+                            <div class="dropdown dropright mt-1">
+                                <button class="btn btn-primary btn-info dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Luoghi
+                                </button>
+                                <div class="dropdown-menu p-3">
+                                    <!-- checkbox -->
+                                    <input type="checkbox">
+                                    <label>Fondazione Ranieri di Sorbello, Perugia</label><br>
+                                    <input type="checkbox">
+                                    <label>Galleria Civica di Arte Moderna e Contemporanea, Torino</label><br>
+                                    <input type="checkbox">
+                                    <label>Internet Culturale</label><br>
+                                    <input type="checkbox">
+                                    <label>Istituto Luce - Cinecittà, Roma</label><br>
+                                    <input type="checkbox">
+                                    <label>Reggia di Caserta, Caserta</label><br>
+                                    <button type="button" class="btn btn-info mt-2">Filtra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <!-- items -->
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <!-- COLONNE INNESTATE: ripeti all'interno di un div con classe col-*-* un div con classe row e innesta al suo interno nuovi div con classe col-*-* -->
+                    <!-- tab -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs mt-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" title="Tutti gli oggetti catalogati">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Solo testi catalogati">Testi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Solo immagini catalogate">Immagini</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Solo audio catalogati">Audio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Solo video catalogati">Video</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" title="Solo 3D catalogati">3D</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- prima riga di card per ciascun item -->
+                    <div class="row">
+                        <!-- item 1 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutte le immagini del catalogo"><i
+                                            class="bi bi-card-image"></i></a></span>
+                                <img src="img/img-item-list/dante-vela.jpg" class="card-img-top"
+                                    alt="Dante, Vela Vincenzo, scultura, 1860, Galleria Civica di Arte Moderna e Contemporanea, Torino">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">Bronzo di Dante</h4>
+                                        <p class="card-text">Creatore: <b><a href="https://viaf.org/viaf/30311644/"
+                                                    target="_blank" title="Identificativo VIAF di Vela, Vincenzo">Vela,
+                                                    Vincenzo<sup>VIAF</sup></a></b>.</p>
+                                        <p class="card-text">Data: <b><a href="#" title="1860">1860</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Galleria_civica_d%27arte_moderna_e_contemporanea"
+                                                    target="_blank"
+                                                    title="Pagina Wikipedia della Galleria Civica di Arte Moderna e Contemporanea, Torino">Galleria
+                                                    Civica di Arte Moderna e Contemporanea,
+                                                    Torino<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="item.html" class="btn btn-blue" title="Tutti i metadati">Tutti
+                                        i metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutte le immagini del catalogo"><i
+                                            class="bi bi-card-image"></i></a></span>
+                                <img src="img/img-item-list/dante-rizzo.jpg" class="card-img-top"
+                                    alt="Dante e Frate Ilario al Convento di Santa Croce, Rizzo Luigi, dipinto a olio, 1851, Reggia di Caserta, Caserta">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">Dante e Frate Ilario al Convento di Santa Croce</h4>
+                                        <p class="card-text">Creatore: <b>Rizzo, Luigi</b>.</p>
+                                        <p class="card-text">Data: <b><a href="#" title="1851">1851</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Reggia_di_Caserta"
+                                                    target="_blank"
+                                                    title="Pagina Wikipedia della Reggia di Caserta">Reggia di Caserta,
+                                                    Caserta<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-blue" title="Tutti i metadati">Tutti i
+                                        metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutti i testi del catalogo"><i
+                                            class="bi bi-file-text-fill"></i></a></span>
+                                <img src="img/img-item-list/dante-tommaseo.jpg" class="card-img-top"
+                                    alt="Il Perticari confutato da Dante: cenni, Tommaseo Niccolò, materiale a stampa, 1825, Fondazione Ranieri di Sorbello, Perugia">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">Il Perticari confutato da Dante: cenni</h4>
+                                        <p class="card-text">Creatore: <b><a href="https://viaf.org/viaf/24639861/"
+                                                    target="_blank"
+                                                    title="Identificativo VIAF di Tommaseo, Niccolò">Tommaseo,
+                                                    Niccolò<sup>VIAF</sup></a></b>.</p>
+                                        <p class="card-text">Data: <b><a href="#" title="1825">1825</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Palazzo_Sorbello"
+                                                    target="_blank"
+                                                    title="Pagina Wikipedia della sede della Fondazione Ranieri di Sorbello, Perugia">Fondazione
+                                                    Ranieri di Sorbello, Perugia<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-blue" title="Tutti i metadati">Tutti i
+                                        metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- seconda riga di card per ciascun item -->
+                    <!-- inserisci un div con classe row per ogni riga di colonne -->
+                    <div class="row">
+                        <!-- item 1 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutti i testi del catalogo"><i
+                                            class="bi bi-file-text-fill"></i></a></span>
+                                <img src="img/img-item-list/dante-byron.jpg" class="card-img-top"
+                                    alt="L'Italia e la profezia di Dante Alighieri, Byron George Gordon, materiale a stampa, 1827, Fondazione Ranieri di Sorbello, Perugia">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">L'Italia e la profezia di Dante Alighieri</h4>
+                                        <p class="card-text">Creatore: <b><a
+                                                    href="http://viaf.org/viaf/95230688/#Byron,_George_Gordon_Byron,_baron,_1788-1824"
+                                                    target="_blank"
+                                                    title="Identificativo VIAF di Byron, George Gordon">Byron, George
+                                                    Gordon<sup>VIAF</sup></a></b>.</p>
+                                        <p class="card-text">Data: <b><a href="#">1827</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Palazzo_Sorbello"
+                                                    target="_blank"
+                                                    title="Pagina Wikipedia della sede della Fondazione Ranieri di Sorbello, Perugia">Fondazione
+                                                    Ranieri di Sorbello, Perugia<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-blue" title="Tutti i metadati">Tutti i
+                                        metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutti i video del catalogo"><i
+                                            class="bi bi-camera-reels-fill"></i></a></span>
+                                <img src="img/img-item-list/dante-euscreen.jpg" class="card-img-top"
+                                    alt="Roma: La nuova Divina Commedia illustrata, EUscreen, video, 1963, Istituto Luce - Cinecittà, Roma">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">Roma: La nuova Divina Commedia illustrata</h4>
+                                        <p class="card-text">Fornitore: <b><a
+                                                    href="https://en.wikipedia.org/wiki/EUscreen" target="_blank"
+                                                    title="Pagina Wikipedia di EUscreen">EUscreen<sup>Wikipedia</sup></a></b>.
+                                        </p>
+                                        <p class="card-text">Data: <b><a href="#" title="1963">1963</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Istituto_Luce" target="_blank"
+                                                    title="Pagina Wikipedia dell'Istituto Luce - Cinecittà, Roma">Istituto
+                                                    Luce - Cinecittà, Roma<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-blue" title="Tutti i metadati">Tutti i
+                                        metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="col-md-4 mt-4">
+                            <div class="card card-item">
+                                <span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vai a tutti gli audio del catalogo"><i
+                                            class="bi bi-file-earmark-music-fill"></i></a></span>
+                                <img src="img/img-item-list/dante-picozzi.png" class="card-img-top"
+                                    alt="Roma: La nuova Divina Commedia illustrata, Picozzi Riccardo, audio, 1900, Internet Culturale">
+                                <div class="card-body">
+                                    <div class="card-metadata">
+                                        <h4 class="card-title">Tre sonetti in lode di Beatrice</h4>
+                                        <p class="card-text">Interprete: Picozzi, Riccardo.</p>
+                                        <p class="card-text">Data: <b><a href="#" title="1900">1900</a></b>.</p>
+                                        <p class="card-text">Istituzione fornitrice: <b><a
+                                                    href="https://it.wikipedia.org/wiki/Internet_Culturale"
+                                                    target="_blank"
+                                                    title="Pagina Wikipedia di Internet Culturale">Internet
+                                                    Culturale<sup>Wikipedia</sup></a></b>.</p>
+                                    </div>
+                                    <a href="#" class="btn btn-blue" title="Tutti i metadati">Tutti i
+                                        metadati</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagination -->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <nav>
+                                <!-- classe pagination-sm per ridurre le dimensioni della pagination -->
+                                <!-- classe justify-content-center per centrare la componente pagination -->
+                                <ul class="pagination pagination-sm justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                                            title="Indietro">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#" title="Pagina 1">1</a>
+                                    </li>
+                                    <li class="page-item" aria-current="page">
+                                        <a class="page-link" href="#" title="Pagina 2">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#" title="Pagina 3">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" title="Avanti">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar -->
+                <div class="col-md-1 col-sm-1 col-xs-12 mt-4">
+                    <aside>
+                        <div>
+                            <a href="#" class="link" title="Guida"><i class="bi bi-question-circle-fill"></i>
+                                <span>Guida</span></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <!-- informazioni secondarie -->
+        <div class="container-fluid background-blue text-light pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <h5 class="text-justify">Attestazioni dantesche</h5>
+                        <ul class="footer-list mt-3 pl-0">
+                            <li>SPARQL endpoint</li>
+                            <li>Download del dataset</li>
+                        </ul>
+                        <ul class="footer-list mt-3 pl-0">
+                            <li>Specifiche tecniche</li>
+                            <li>Applicazione web</li>
+                        </ul>
+                        <ul class="footer-list mt-3 pl-0">
+                            <li>Credits</li>
+                            <li>Licenze</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <h5 class="text-justify">/DH.arc - Digital Humanities Advanced Research Centre</h5>
+                        <ul class="footer-list mt-3 pl-0">
+                            <li><a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc"
+                                    class="text-light" target="_blank" title="Sito web di /DH.arc"><u>About</u></a>
+                            </li>
+                            <li><a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc"
+                                    class="text-light" target="_blank" title="Progetti di /DH.arc"><u>Tutti i
+                                        progetti di /DH.arc</u></a></li>
+                            <li><a href="https://centri.unibo.it/dharc/en/contacts" class="text-light underline"
+                                    target="_blank" title="Contatti di /DH.arc"><u>Contatti</u></a></li>
+                        </ul>
+                        <img src="img/loghi/logo-dharc.png" class="logo-width" alt="Logo di /DH.arc">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="container-fluid background-gray">
+            <p class="mb-0 pb-1 pt-1 text-center">© Copyright (c) 2021 by /DH.arc - Digital Humanities Advanced Research
+                Centre.</p>
+        </div>
+    </footer>
+
+    <!-- script sempre prima della chiusura del body -->
+    <!-- jquery -->
+    <!-- se si intende utilizzare bootstrap è sempre necessario includere prima una libreria di JavaScript chiamata jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
