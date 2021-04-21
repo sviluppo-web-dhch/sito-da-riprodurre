@@ -36,7 +36,7 @@ Inoltre, come precedentemente spiegato, vengono integrati:
       <li>Registrazione</li>
       <li>Repositories</li>
       <li>Organizations</li>
-      <li>Pubblicazione di un sito web attraverso GitHub Pages</li>
+      <li>Pubblicazione di un sito web via GitHub Pages</li>
     </ul>
   </li>
 </ol>
