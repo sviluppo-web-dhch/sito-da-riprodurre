@@ -30,7 +30,7 @@ Inoltre, come precedentemente spiegato, vengono integrati:
     </ul>
   </li>
   <li>
-    <a href="https://pages.github.com/" target="_blank" alt="GitHub Pages">GitHub Pages</a> del quale vengono affrontati i seguenti argomenti:
+    <a href="https://github.com/" target="_blank" alt="GitHub">GitHub</a> del quale vengono affrontati i seguenti argomenti:
     <ul>
       <li>Funzionalità principali di GitHub</li>
       <li>Registrazione</li>
