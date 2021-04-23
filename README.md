@@ -55,7 +55,7 @@ Il link al sito d'esempio è il seguente:
 
 <b>Attenzione!!! Le immagini riportate nel sito sono comperte da licenze Creative Commons che ne permettono il riutilizzo. Esse fungono da placeholder, dunque sono inserite a scopo illustrativo ed esemplificativo.</b>
 
-GGHF
+GGHF!
 
 Martina Dello Buono
 <br>
